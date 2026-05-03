@@ -3,7 +3,7 @@
 M.S. student in Physics, National Taiwan University (NTU)  
 Research: Quantum Field Theory • Gravity • Cosmology • Scientific Computing
 
-Email: you@domain.com  
+Email: physhsiung@gmail.com  
 GitHub: https://github.com/<your-handle>  
 Google Scholar: <link>  
 arXiv: <link>  
