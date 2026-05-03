@@ -10,7 +10,7 @@ arXiv: <link>
 
 ## Navigation
 
-- [Research](research.md)
+- [Research](research.html)
 
 - [Publications](publications.html)
 
