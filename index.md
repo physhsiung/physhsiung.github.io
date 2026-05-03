@@ -8,6 +8,13 @@ GitHub: https://github.com/<your-handle>
 Google Scholar: <link>  
 arXiv: <link>  
 
+## Navigation
+
+- [Research](research.html)
+
+- [Publications](publications.html)
+
+- [CV](cv.html)
 ---
 
 ## About
