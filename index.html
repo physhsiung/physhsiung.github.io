@@ -1,64 +1,107 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Yang-Shuo Hsiung</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    color: #222;
+    margin: 0;
+}
 
-<body>
+/* Navbar */
 
-<nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="cv.html">CV</a>
-</nav>
+.navbar {
+    background-color: rgba(255,255,255,0.95);
 
-<div class="content">
+    padding: 20px 40px;
 
-<div class="hero">
+    display: flex;
+    gap: 40px;
 
-    <img src="images/profile_2.png" class="profile-photo">
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
-    <div class="hero-text">
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.08);
 
-        <h1>Yang-Shuo Hsiung</h1>
+    backdrop-filter: blur(8px);
+}
 
-        <p>
-        M.S. student in Physics<br>
-        National Taiwan University (NTU)
-        </p>
+.navbar a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
 
-        <p>
-        Quantum Field Theory • Gravity • Cosmology
-        </p>
+    transition: color 0.2s ease;
+}
 
-        <p>
-        Email: physhsiung@gmail.com
-        </p>
+.navbar a:hover {
+    color: #1d4ed8;
+}
 
-    </div>
+/* Main card */
 
-</div>
+.content {
+    background-color: white;
 
-<hr>
+    max-width: 1000px;
 
-<h2>About</h2>
+    margin: 50px auto;
+    padding: 60px;
 
-<p>
-I am a Master’s student in Physics at National Taiwan University working on quantum field theory in curved spacetime and analog Hawking radiation.
-</p>
+    border-radius: 20px;
 
-<h2>Research Interests</h2>
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
+}
 
-<ul>
-<li>Analog Hawking radiation from accelerating plasma mirrors</li>
-<li>Moving-mirror QFT and particle creation</li>
-<li>Quantum field theory in curved spacetime</li>
-</ul>
+/* Hero section */
 
-</div>
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
 
-</body>
-</html>
+/* Profile image */
+
+.profile-photo {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Text */
+
+.hero-text h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero-text p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Section titles */
+
+h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+/* Links */
+
+a {
+    color: #1d4ed8;
+}
+
+hr {
+    margin: 50px 0;
+    border: none;
+    border-top: 1px solid #dddddd;
+}
