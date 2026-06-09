@@ -2,48 +2,127 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Yang-Shuo Hsiung</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav class="navbar">
-    <a href="/">Home</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="cv.html">CV</a>
-</nav>
+<header class="site-header">
+    <a href="index.html" class="site-name">Yang-Shuo Hsiung</a>
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html" class="is-active">Research</a>
+        <a href="honors.html">Honors</a>
+        <a href="cv.html">CV</a>
+    </nav>
+</header>
 
 <div class="content">
 
 <h1>Research</h1>
-
-<h2>Particle Creation and Moving Mirrors</h2>
-
-<p>
-My current research focuses on particle creation in accelerating-mirror systems,
-which serve as analogue models for black-hole radiation. I am especially interested
-in developing stable numerical and semi-analytic methods for computing Bogoliubov
-coefficients for experimentally realistic trajectories.
+<p class="section-intro">
+    My work connects quantum field theory in curved spacetime, analogue gravity,
+    and cosmology, with an emphasis on particle creation, symmetry constraints,
+    and numerical methods.
 </p>
 
-<h2>Inertial Replacement Method</h2>
+<div class="section-tabs">
+    <a href="#research-areas">Research Areas</a>
+    <a href="#publications">Publications</a>
+    <a href="#presentations">Presentations</a>
+</div>
 
-<p>
-The Inertial Replacement Method (IRM) is a framework for treating long-time
-oscillatory integrals by replacing asymptotic regions with analytically controlled
-inertial segments, while computing the physically relevant accelerating region numerically.
-</p>
+<h2 id="research-areas" class="section-heading">Research Areas</h2>
 
-<h2>Cosmology and Large-Scale Structure</h2>
+<div class="item-list">
+    <section class="list-item">
+        <h2>Particle Creation and Moving Mirrors</h2>
+        <p>
+            I study particle creation in accelerating-mirror systems, which serve as
+            analogue models for black-hole radiation. I am especially interested in
+            stable numerical and semi-analytic methods for computing Bogoliubov
+            coefficients for experimentally realistic trajectories.
+        </p>
+        <p>
+            The Inertial Replacement Method (IRM) is a framework for treating long-time
+            oscillatory integrals by replacing asymptotic regions with analytically
+            controlled inertial segments, while computing the physically relevant
+            accelerating region numerically.
+        </p>
+        <div class="tags">
+            <span>Analogue Hawking radiation</span>
+            <span>Moving mirrors</span>
+            <span>Bogoliubov coefficients</span>
+            <span>Numerical methods</span>
+            <span>Oscillatory integrals</span>
+            <span>Inertial Replacement Method</span>
+        </div>
+    </section>
 
-<p>
-I also work on cosmological simulations and statistics of large-scale structure,
-including matter power spectra and baryonic feedback effects.
-</p>
+    <section class="list-item">
+        <h2>Cosmological Correlators and Bootstrap</h2>
+        <p>
+            I am interested in cosmological correlators and the cosmological bootstrap:
+            using symmetry principles to constrain correlation functions that encode
+            inflationary physics in the early universe.
+        </p>
+        <div class="tags">
+            <span>Cosmological correlators</span>
+            <span>Cosmological bootstrap</span>
+            <span>Inflation</span>
+            <span>Symmetry constraints</span>
+        </div>
+    </section>
+
+    <section class="list-item">
+        <h2>Cosmology and Large-Scale Structure</h2>
+        <p>
+            I also work on cosmological simulations and statistics of large-scale
+            structure, including matter power spectra and baryonic feedback effects.
+        </p>
+        <div class="tags">
+            <span>Large-scale structure</span>
+            <span>Power spectra</span>
+            <span>Baryonic feedback</span>
+        </div>
+    </section>
+</div>
+
+<h2 id="publications" class="section-heading">Publications</h2>
+
+<div class="citation-list">
+    <p>
+        <strong>Y.-S. Hsiung</strong>, K. Nagamine, and Y. Oku,
+        <em>Cosmological Correlation Analysis of Baryonic Feedback Effects on Large-Scale Structure Formation</em>.
+        <span class="citation-note">In preparation</span>
+    </p>
+    <p>
+        <strong>Y.-S. Hsiung</strong> and P. Chen,
+        <em>A New Approach to the Calculation of Particle Creation from Analog Black Holes</em>,
+        arXiv:<a href="https://arxiv.org/abs/2511.22895">2511.22895</a> [gr-qc] (2025).
+        <span class="citation-note">11/2025</span>
+    </p>
+</div>
+
+<h2 id="presentations" class="section-heading">Presentations</h2>
+
+<div class="citation-list talk-list">
+    <p><span class="citation-note">05/2026</span> <span class="type-label">Talk</span> <em>A New Approach to the Calculation of Particle Creation from Analog Black Holes</em>, Master Thesis Oral Examination, NTU.</p>
+    <p><span class="citation-note">08/2025</span> <span class="type-label">Talk</span> <em>A New Perspective on Particle Creation from Analog Black Holes</em>, UCTS Program, University of Chicago.</p>
+    <p><span class="citation-note">08/2025</span> <span class="type-label">Poster</span> <em>A New Perspective on Particle Creation from Analog Black Holes</em>, UCTS Program, University of Chicago.</p>
+    <p><span class="citation-note">08/2024</span> <span class="type-label">Talk</span> <em>Investigation into the Baryonic Feedback Effect to the Large-Scale Structure Formation</em>, ISP Program, Graduate School of Science, Osaka University.</p>
+    <p><span class="citation-note">07/2024</span> <span class="type-label">Talk</span> <em>Numerical Approach of the Hawking Radiation Spectrum in AnaBHEL Experiment</em>, OUTAP Seminar, Osaka University.</p>
+    <p><span class="citation-note">01/2024</span> <span class="type-label">Talk</span> <em>Learning to Count the Hawking Radiation in AnaBHEL Experiment</em>, Taipei Astronomy Workshop, ASIAA.</p>
+    <p><span class="citation-note">12/2023</span> <span class="type-label">Lecture</span> <em>The Hot Big Bang</em>, Cosmology Study Group, LeCosPA.</p>
+</div>
 
 </div>
+
+<footer class="site-credit">
+    Background image: <a href="https://www.illustris-project.org/static/illustris/media/illustris_box_dmdens_gasdens.png">Illustris Collaboration / Illustris Project</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+</footer>
 
 </body>
 </html>
