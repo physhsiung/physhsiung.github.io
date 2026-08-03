@@ -107,7 +107,7 @@ a:hover { color: var(--accent); }
     grid-template-columns: minmax(0, 1.45fr) minmax(260px, .55fr);
     align-items: center;
     gap: 80px;
-    min-height: 560px;
+    min-height: 480px;
     padding-bottom: 72px;
     border-bottom: 1px solid var(--line);
 }
@@ -149,6 +149,12 @@ h1 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(54px, 7vw, 88px);
     font-weight: 500;
+}
+
+.hero-text h1 {
+    max-width: none;
+    font-size: clamp(44px, 5vw, 66px);
+    white-space: nowrap;
 }
 
 .page-title { font-size: clamp(48px, 6vw, 74px); }
@@ -399,6 +405,7 @@ p { margin: 0 0 20px; }
     .profile-wrap { order: -1; justify-self: start; }
     .profile-photo { width: 190px; }
     h1 { font-size: clamp(48px, 15vw, 68px); }
+    .hero-text h1 { font-size: clamp(35px, 10.2vw, 42px); white-space: nowrap; }
     .home-section { grid-template-columns: 1fr; gap: 22px; padding-top: 54px; }
     .home-section + .home-section { margin-top: 54px; }
     .focus-grid { grid-template-columns: 1fr; }
