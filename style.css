@@ -470,6 +470,11 @@ p { margin: 0 0 20px; }
 .honor-preview h2 { font-family: Georgia, "Times New Roman", serif; font-size: 30px; font-weight: 500; }
 .honor-preview > p:last-child { color: var(--muted); }
 
+.honor-description { display: grid; gap: 4px; margin-top: 22px; }
+.honor-description p { margin: 0; }
+#honor-note { color: var(--muted); font-size: 17px; line-height: 1.55; }
+#honor-context { color: #8a8d92; font-size: 14px; font-weight: 650; line-height: 1.55; }
+
 /* Teaching and outreach */
 
 .teaching-section { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 70px; padding: 60px 0; border-top: 1px solid var(--line); }
