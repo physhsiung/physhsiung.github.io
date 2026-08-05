@@ -472,8 +472,8 @@ p { margin: 0 0 20px; }
 
 .honor-description { display: grid; gap: 4px; margin-top: 22px; }
 .honor-description p { margin: 0; }
-#honor-note { color: var(--muted); font-size: 17px; line-height: 1.55; }
-#honor-context { color: #8a8d92; font-size: 14px; font-weight: 650; line-height: 1.55; }
+#honor-note,
+#honor-context { color: var(--muted); font-size: 17px; font-weight: 400; line-height: 1.55; }
 
 /* Teaching and outreach */
 
