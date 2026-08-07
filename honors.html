@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://physhsiung.github.io/honors.html">
-    <title>Honors | Yang-Shuo Hsiung</title><link rel="stylesheet" href="style.css?v=20260806-1">
+    <title>Honors | Yang-Shuo Hsiung</title><link rel="stylesheet" href="style.css?v=20260807-1"><script src="site.js?v=20260807-1" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -19,6 +19,8 @@
         data-date="June 2026"
         data-note="College of Sciences"
         data-context="National Taiwan University"
+        data-image="images/honors/2026-Dean's List Award of Graduation.jpg"
+        data-media="images/honors/2026-Dean's List Award of Graduation.jpg"
         data-source="https://www.science.ntu.edu.tw/en/"
     >
         <span>06/2026</span>
@@ -204,7 +206,7 @@
 </div>
         <aside class="honor-preview" aria-live="polite">
             <div class="honor-media" id="honor-media" hidden>
-                <a id="honor-media-link" href="#" target="_blank" rel="noopener"><img id="honor-image" src="" alt=""></a>
+                <button id="honor-media-button" type="button" data-lightbox aria-label="View this honor image larger"><img id="honor-image" src="" alt=""></button>
             </div>
             <p class="section-label" id="honor-date">May 2026</p>
             <h2 id="honor-title">Honorary Membership, Phi Tau Phi Scholastic Honor Society</h2>
@@ -213,8 +215,7 @@
                 <p id="honor-context">Taiwan</p>
             </div>
             <div class="honor-actions">
-                <a id="honor-source" href="https://cc.ee.ntu.edu.tw/~giee/gov/107/1070026148.pdf" target="_blank" rel="noopener">Official source</a>
-                <a id="honor-document" href="#" target="_blank" rel="noopener" hidden>View certificate</a>
+                <a id="honor-source" href="https://cc.ee.ntu.edu.tw/~giee/gov/107/1070026148.pdf" target="_blank" rel="noopener">Source: Website</a>
             </div>
         </aside>
     </div>
@@ -242,19 +243,15 @@ const updatePreview = (row) => {
     document.getElementById('honor-context').textContent = row.dataset.context;
 
     const image = row.dataset.image || '';
-    const documentUrl = row.dataset.media || '';
     const media = document.getElementById('honor-media');
-    const mediaLink = document.getElementById('honor-media-link');
+    const mediaButton = document.getElementById('honor-media-button');
     const imageElement = document.getElementById('honor-image');
     media.hidden = !image;
-    imageElement.src = image;
+    if (image) imageElement.src = image;
+    else imageElement.removeAttribute('src');
     imageElement.alt = image ? `${row.querySelector('strong').textContent} document or event` : '';
-    mediaLink.href = documentUrl || image;
-
-    const documentLink = document.getElementById('honor-document');
-    documentLink.hidden = !documentUrl;
-    documentLink.href = documentUrl || '#';
-    documentLink.textContent = documentUrl.toLowerCase().endsWith('.pdf') ? 'View certificate' : 'View photo';
+    mediaButton.dataset.lightboxSrc = image;
+    mediaButton.dataset.lightboxAlt = imageElement.alt;
 
     const sourceLink = document.getElementById('honor-source');
     sourceLink.href = row.dataset.source;
