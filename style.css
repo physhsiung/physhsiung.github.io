@@ -517,7 +517,7 @@ p { margin: 0 0 20px; }
 #honor-note,
 #honor-context { color: var(--muted); font-size: 17px; font-weight: 400; line-height: 1.55; }
 .honor-actions { display: flex; flex-wrap: wrap; gap: 10px 16px; margin-top: 20px; }
-.honor-actions a { font-size: 12px; font-weight: 750; }
+.honor-actions a { font-size: 12px; font-weight: 750; overflow-wrap: anywhere; }
 .honor-actions [hidden] { display: none; }
 
 /* Shared full-size image viewer */
