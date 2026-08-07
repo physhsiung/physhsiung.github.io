@@ -180,7 +180,7 @@ h1 {
 }
 
 .academic-role {
-    margin: -10px 0 18px;
+    margin: 0 0 4px;
     color: var(--accent-dark);
     font-size: 15px;
     font-weight: 750;
@@ -199,10 +199,12 @@ p { margin: 0 0 20px; }
     margin-bottom: 30px;
     color: #45484d;
     font-size: clamp(19px, 2vw, 23px);
+    font-style: italic;
     line-height: 1.58;
 }
 
-.hero-meta { color: var(--muted); font-size: 15px; line-height: 1.75; }
+.hero-affiliation { display: grid; gap: 0; }
+.hero-meta { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.62; }
 
 .link-row { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 32px; }
 
@@ -603,7 +605,7 @@ p { margin: 0 0 20px; }
     .profile-photo { width: 190px; }
     h1 { font-size: clamp(48px, 15vw, 68px); }
     .hero-text h1 { font-size: clamp(35px, 10.2vw, 42px); white-space: nowrap; }
-    .academic-role { margin-top: -6px; font-size: 13px; }
+    .academic-role { font-size: 13px; }
     .profile-links { gap: 14px 18px; }
     .icon-link span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
     .button.icon-link span { position: static; width: auto; height: auto; overflow: visible; clip: auto; }
