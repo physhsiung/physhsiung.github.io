@@ -6,10 +6,11 @@
     <meta name="description" content="Research by Yang-Shuo Hsiung in cosmological bootstrap, quantum field theory, and analogue gravity.">
     <title>Research | Yang-Shuo Hsiung</title>
     <link rel="canonical" href="https://physhsiung.github.io/research.html">
-    <link rel="stylesheet" href="style.css?v=20260807-1">
+    <link rel="stylesheet" href="style.css?v=20260808-17">
     <script src="site.js?v=20260807-1" defer></script>
+    <script src="research.js?v=20260808-3" defer></script>
 </head>
-<body>
+<body class="research-page">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
     <a href="/" class="site-name">Yang-Shuo Hsiung</a>
@@ -19,55 +20,64 @@
 </header>
 
 <main class="content" id="main-content">
-    <header class="page-header compact-page-header">
-        <p class="eyebrow">Research</p>
-        <h1 class="page-title">From symmetry to observables.</h1>
+    <header class="page-header compact-page-header research-page-header compact-title-header">
+        <h1 class="page-title">From Principles to Observables</h1>
     </header>
 
     <section id="projects" class="research-block">
         <h2>Research Projects</h2>
-        <p class="trajectory-intro">My research has developed from computational studies of cosmological structure and analogue gravity toward my current work on the cosmological bootstrap. The common thread is a search for controlled ways to connect fundamental principles in quantum fields and gravity with observable signatures.</p>
 
         <div class="research-timeline">
             <article class="research-topic featured">
-                <figure class="research-visual">
-                    <button class="research-image-button" type="button" data-lightbox data-lightbox-src="images/research/ihes-lecture-hall.jpg" aria-label="View the IHES summer school photo larger"><img src="images/research/ihes-lecture-hall.jpg" width="900" height="1200" alt="Participants approaching the IHES conference center during the Cosmological Correlators summer school"></button>
-                    <figcaption>Arriving at the IHES conference center for the 2026 Summer School on Cosmological Correlators. <a href="https://www.ihes.fr/indico_plugin_event/2026-ihes-summer-school-cosmological-correlators/">Program source</a></figcaption>
+                <figure class="research-visual research-carousel" data-research-carousel>
+                    <button class="research-image-button research-carousel-stage" type="button" aria-label="Open the Cosmological Bootstrap image gallery">
+                        <img class="research-slide is-active" src="images/research/IHES_lecture_hall.jpg" alt="Participants approaching the IHES conference center during the Cosmological Correlators summer school">
+                        <span class="research-slide-count" aria-hidden="true">1 / 1</span>
+                    </button>
                 </figure>
                 <div class="research-topic-copy">
                     <div class="project-meta"><span class="project-state">Current research</span><time>07/2026 — Present</time></div>
                     <h3>Cosmological Bootstrap</h3>
-                    <p>I study cosmological correlators as probes of inflationary physics. The bootstrap approach uses de Sitter symmetry, locality, unitarity, and analytic structure to constrain observables in the early universe—often without relying on a conventional bulk calculation.</p>
                     <p class="project-advisor">Advisor: Yutin Huang</p>
-                    <div class="tags"><span>Cosmological correlators</span><span>Inflation</span><span>de Sitter</span><span>Analytic structure</span></div>
+                    <p>I study cosmological correlators as probes of inflationary physics. The bootstrap approach uses de Sitter symmetry, locality, unitarity, and analytic structure to constrain observables in the early universe—often without relying on a conventional bulk calculation.</p>
+                    <div class="tags"><span>Cosmological correlators</span><span>Inflation</span><span>de Sitter</span></div>
                 </div>
             </article>
 
             <article class="research-topic past-project">
-                <figure class="research-visual">
-                    <button class="research-image-button" type="button" data-lightbox data-lightbox-src="images/research/anabhel-particle-spectrum.png" aria-label="View the particle-creation spectrum larger"><img src="images/research/anabhel-particle-spectrum.png" width="1200" height="777" loading="lazy" alt="Calculated particle-creation spectrum for an analogue black-hole trajectory"></button>
-                    <figcaption>Numerically calculated particle-creation spectrum for the Chen-Mourou plasma-mirror trajectory. <a href="https://arxiv.org/abs/2511.22895">Hsiung &amp; Chen (2025)</a></figcaption>
+                <figure class="research-visual research-carousel" data-research-carousel>
+                    <button class="research-image-button research-carousel-stage" type="button" aria-label="Open the analogue black-hole image gallery">
+                        <img class="research-slide is-active" src="images/research/AnaBHEL_moving_mirror_Logex.png" loading="lazy" alt="Log-ex trajectory for an accelerating moving mirror">
+                        <img class="research-slide" src="images/research/AnaBHEL_IRM_flowchart.png" loading="lazy" alt="Flowchart of the Inertial Replacement Method">
+                        <img class="research-slide" src="images/research/AnaBHEL_particle_creation_spectrum.png" loading="lazy" alt="Calculated particle-creation spectrum for an analogue black-hole trajectory">
+                        <span class="research-slide-count" aria-hidden="true">1 / 3</span>
+                    </button>
                 </figure>
                 <div class="research-topic-copy">
                     <div class="project-meta"><span class="project-state">Past research</span><time>07/2023 — 07/2026</time></div>
                     <h3>Particle Creation from Analogue Black Holes</h3>
-                    <p>During my master's research, I developed the Inertial Replacement Method (IRM), a hybrid analytic–numerical framework for calculating Bogoliubov coefficients for general moving-mirror trajectories.</p>
-                    <ul class="result-list"><li>Derived controlled error estimates for perfectly and imperfectly reflecting mirrors.</li><li>Validated the method against analytically solvable trajectories.</li><li>Applied it to a numerical, PIC-based Chen–Mourou plasma-mirror trajectory relevant to AnaBHEL.</li><li>Found that the radiation spectrum is governed almost entirely by the finite accelerating region.</li></ul>
                     <p class="project-advisor">Advisors: Pisin Chen and Robert M. Wald</p>
-                    <div class="tags"><span>Analogue Hawking radiation</span><span>Moving mirrors</span><span>Numerical QFT</span></div>
+                    <p>I developed a hybrid analytic–numerical framework for calculating particle creation from the moving mirror as an analog black hole.</p>
+                    <ul class="result-list"><li>Developed the Inertial Replacement Method with controlled error estimates for perfectly and imperfectly reflecting mirrors.</li><li>Validated the method against analytically solvable trajectories and applied it to a PIC-based Chen–Mourou plasma-mirror trajectory.</li><li>Found that the radiation spectrum is more sensitive to the ray-tracing mapping in the finite accelerating region than to its asymptotic behavior.</li></ul>
+                    <div class="tags"><span>Analogue Hawking radiation</span><span>Moving mirrors</span><span>QFT in curved spacetime</span></div>
                 </div>
             </article>
 
             <article class="research-topic past-project">
-                <figure class="research-visual">
-                    <button class="research-image-button" type="button" data-lightbox data-lightbox-src="images/research/CROCODILE_Planck_plot.png" aria-label="View the CROCODILE simulation plot larger"><img src="images/research/CROCODILE_Planck_plot.png" width="1680" height="1224" loading="lazy" alt="CROCODILE simulation comparison with Planck cosmological constraints"></button>
-                    <figcaption>CROCODILE simulation results compared with Planck cosmological constraints, used in my Osaka ISP project. <a href="https://arxiv.org/abs/2401.06324">Simulation source</a></figcaption>
+                <figure class="research-visual research-carousel" data-research-carousel>
+                    <button class="research-image-button research-carousel-stage" type="button" aria-label="Open the large-scale structure image gallery">
+                        <img class="research-slide is-active" src="images/research/CROCODILE_Planck_plot.png" loading="lazy" alt="CROCODILE simulation comparison with Planck cosmological constraints">
+                        <img class="research-slide" src="images/research/CROCODILE_mass_components.png" loading="lazy" alt="Mass components in the CROCODILE cosmological simulation">
+                        <img class="research-slide" src="images/research/CROCODILE_redshift.png" loading="lazy" alt="Redshift evolution in the CROCODILE cosmological simulation">
+                        <span class="research-slide-count" aria-hidden="true">1 / 3</span>
+                    </button>
                 </figure>
                 <div class="research-topic-copy">
                     <div class="project-meta"><span class="project-state">Past research</span><time>07/2024 — 08/2025</time></div>
                     <h3>Large-Scale Structure and Baryonic Feedback</h3>
-                    <p>I studied cosmological simulations and statistical measures of large-scale structure, including matter power spectra and the effects of baryonic feedback.</p>
                     <p class="project-advisor">Advisor: Kentaro Nagamine</p>
+                    <p>I used the cosmological simulation, <a href="https://arxiv.org/abs/2401.06324">CROCODILE</a>, to study how baryonic physics modifies large-scale structure observables.</p>
+                    <ul class="result-list"><li>Analyzed matter power spectra, clustering correlation functions, and the box-size and resolution effects of the simulation.</li><li>Compared the contributions of different mass components—dark matter, gas, stars, and black holes—on small scales.</li><li>Examined the redshift dependence of baryonic feedback on structure formation.</li></ul>
                     <div class="tags"><span>Large-scale structure</span><span>Power spectra</span><span>Baryonic feedback</span></div>
                 </div>
             </article>
@@ -79,7 +89,7 @@
         <div class="publication-list-modern">
             <article class="publication-entry">
                 <div class="publication-year">2025</div>
-                <div><h3>A New Approach to the Calculation of Particle Creation from Analog Black Holes</h3><p><strong>Y.-S. Hsiung</strong> and P. Chen · arXiv:2511.22895 [gr-qc]</p><div class="publication-links"><a href="https://arxiv.org/abs/2511.22895">arXiv</a><a href="https://arxiv.org/pdf/2511.22895">PDF</a><a href="https://inspirehep.net/literature/3087501">INSPIRE</a></div></div>
+                <div><h3>A New Approach to the Calculation of Particle Creation from Analog Black Holes</h3><p><a href="https://arxiv.org/abs/2511.22895">arXiv:2511.22895 [gr-qc]</a></p></div>
             </article>
         </div>
     </section>
@@ -87,13 +97,14 @@
     <section id="presentations" class="research-block">
         <h2>Presentations</h2>
         <div class="citation-list talk-list">
-            <p><span class="citation-note">05/2026</span> <span class="type-label">Talk</span> <em>A New Approach to the Calculation of Particle Creation from Analog Black Holes</em>, Master Thesis Oral Examination, NTU.</p>
-            <p><span class="citation-note">08/2025</span> <span class="type-label">Talk</span> <em>A New Perspective on Particle Creation from Analog Black Holes</em>, UChicago-Taiwan Student Exchange Program (UCTS), University of Chicago. <a class="resource-link" href="images/research/UCTS_final_presentation.JPG" data-lightbox>Event photo</a></p>
-            <p><span class="citation-note">08/2025</span> <span class="type-label">Poster</span> <em>A New Perspective on Particle Creation from Analog Black Holes</em>, UChicago-Taiwan Student Exchange Program (UCTS), University of Chicago. <a class="resource-link" href="images/research/ucts-poster.jpg" data-lightbox>Poster photo</a></p>
-            <p><span class="citation-note">08/2024</span> <span class="type-label">Talk</span> <em>Investigation into the Baryonic Feedback Effect to the Large-Scale Structure Formation</em>, International Summer Program (ISP), Osaka University. <a class="resource-link" href="images/research/OsakaU_final_presentation.JPG" data-lightbox>Event photo</a></p>
-            <p><span class="citation-note">07/2024</span> <span class="type-label">Talk</span> <em>Numerical Approach of the Hawking Radiation Spectrum in AnaBHEL Experiment</em>, OUTAP Seminar, Osaka University.</p>
-            <p><span class="citation-note">01/2024</span> <span class="type-label">Talk</span> <em>Learning to Count the Hawking Radiation in AnaBHEL Experiment</em>, Taipei Astronomy Workshop, ASIAA.</p>
-            <p><span class="citation-note">12/2023</span> <span class="type-label">Lecture</span> <em>The Hot Big Bang</em>, Cosmology Study Group, LeCosPA.</p>
+            <p><span class="citation-note">06/2026</span><span class="presentation-line"><a class="type-label presentation-photo-link" href="images/research/2026_Dean_list_poster.JPG" data-lightbox aria-label="View this poster">Poster</a> <span class="presentation-details"><em>A New Approach to the Calculation of Particle Creation from Analog Black Holes</em>, Dean’s List Award, CoS, NTU.</span></span></p>
+            <p><span class="citation-note">05/2026</span><span class="presentation-line"><a class="type-label presentation-photo-link" href="images/research/2026_MS_oral.png" data-lightbox aria-label="View photo from this talk">Talk</a> <span class="presentation-details"><em>A New Approach to the Calculation of Particle Creation from Analog Black Holes</em>, Master Thesis Oral Examination, NTU.</span></span></p>
+            <p><span class="citation-note">08/2025</span><span class="presentation-line"><a class="type-label presentation-photo-link" href="images/research/2025_UCTS_final_presentation.JPG" data-lightbox aria-label="View photo from this talk">Talk</a> <span class="presentation-details"><em>A New Perspective on Particle Creation from Analog Black Holes</em>, UCTS Program, University of Chicago.</span></span></p>
+            <p><span class="citation-note">08/2025</span><span class="presentation-line"><a class="type-label presentation-photo-link" href="images/research/2025_UCTS_poster.jpg" data-lightbox aria-label="View this poster">Poster</a> <span class="presentation-details"><em>A New Perspective on Particle Creation from Analog Black Holes</em>, UCTS Program, University of Chicago.</span></span></p>
+            <p><span class="citation-note">08/2024</span><span class="presentation-line"><a class="type-label presentation-photo-link" href="images/research/2024_UOsaka_final_presentation.JPG" data-lightbox aria-label="View photo from this talk">Talk</a> <span class="presentation-details"><em>Investigation into the Baryonic Feedback Effect to the Large-Scale Structure Formation</em>, ISP, University of Osaka.</span></span></p>
+            <p><span class="citation-note">07/2024</span><span class="presentation-line"><span class="type-label">Talk</span> <span class="presentation-details"><em>Numerical Approach of the Hawking Radiation Spectrum in AnaBHEL Experiment</em>, OUTAP Seminar, University of Osaka.</span></span></p>
+            <p><span class="citation-note">01/2024</span><span class="presentation-line"><a class="type-label presentation-photo-link" href="images/research/2024_ASIAA_talk.JPG" data-lightbox aria-label="View photo from this talk">Talk</a> <span class="presentation-details"><em>Learning to Count the Hawking Radiation in AnaBHEL Experiment</em>, Taipei Astronomy Workshop, ASIAA.</span></span></p>
+            <p><span class="citation-note">12/2023</span><span class="presentation-line"><span class="type-label">Lecture</span> <span class="presentation-details"><em>The Hot Big Bang</em>, Cosmology Study Group, LeCosPA.</span></span></p>
         </div>
     </section>
 </main>
