@@ -28,7 +28,7 @@
     </div>
 
     <div
-        class="honor-row is-selected"
+        class="honor-row"
         tabindex="0"
         data-date="May 2026"
         data-note="The Phi Tau Phi Scholastic Honor Society"
@@ -216,14 +216,14 @@
             <div class="honor-media" id="honor-media" hidden>
                 <button id="honor-media-button" type="button" aria-label="View this honor image larger"><img id="honor-image" src="" alt=""></button>
             </div>
-            <p class="section-label" id="honor-date">May 2026</p>
-            <h2 id="honor-title">Honorary Membership, Phi Tau Phi Scholastic Honor Society</h2>
+            <p class="section-label" id="honor-date"></p>
+            <h2 id="honor-title"></h2>
             <div class="honor-description">
-                <p id="honor-note">The Phi Tau Phi Scholastic Honor Society</p>
-                <p id="honor-context">Taiwan</p>
+                <p id="honor-note"></p>
+                <p id="honor-context"></p>
             </div>
             <div class="honor-actions">
-                <a id="honor-source" href="https://cc.ee.ntu.edu.tw/~giee/gov/107/1070026148.pdf" target="_blank" rel="noopener">Source: https://cc.ee.ntu.edu.tw/~giee/gov/107/1070026148.pdf</a>
+                <a id="honor-source" href="" target="_blank" rel="noopener"></a>
             </div>
         </aside>
     </div>
@@ -295,8 +295,11 @@ document.getElementById('honor-media-button').addEventListener('click', event =>
     event.stopPropagation();
     window.open(mediaSource, '_blank', 'noopener');
 });
-mediaQuery.addEventListener('change', () => placePreview(document.querySelector('.honor-row.is-selected')));
-updatePreview(document.querySelector('.honor-row.is-selected'));
+mediaQuery.addEventListener('change', () => {
+    const selectedRow = document.querySelector('.honor-row.is-selected') || rows[0];
+    if (selectedRow) placePreview(selectedRow);
+});
+if (rows[0]) updatePreview(rows[0]);
 </script>
 </body>
 </html>
